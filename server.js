@@ -150,7 +150,9 @@ const port = process.env.PORT || 5000;
 
 // CORS configuration for local frontend
 const corsOptions = {
-  origin: 'http://localhost:5173', // Allow only requests from localhost
+  // origin: 'http://localhost:5173', // Allow only requests from localhost
+  origin: 'https://peakforce.co.in/', 
+   // Allow only requests from the production domain
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 };
